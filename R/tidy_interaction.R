@@ -1,6 +1,6 @@
 #' @param interactions interactions
 #' @export
-tidy_interaction <- function(interactions) {
+interactions2pairs <- function(interactions) {
   x_name_id_pairs <-
     data.frame(x_name =
                  c(interactions$Parent, interactions$Child) %>%
